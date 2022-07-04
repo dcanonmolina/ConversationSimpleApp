@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://media.twiliocdn.com/sdk/js/conversations/v2.1/twilio-conversations.min.js"></script>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        
+        <div>
+            token: 
+            <input id="token" type="text"/>
+            <button id="join">Start</button>
+            <button id="disconnect">Disconnect</button>
+        </div>
+        <div>
+            Join:
+            <input id="connectConversation" type="text" />
+            <button id="startConversation">Start Conversation</button>
+        </div>
+        <div>
+            Message:
+            <input id="messageContent" type="text" />
+            <button id="send">Send Message</button>
+        </div>
+        <div>
+            New Conversation:
+            <input id="conversationUnique" type="text" />
+            <button id="createConversation">Create Conversation</button>
+        </div>
+        <div>
+            <button id="getUnreadConversations">Get UnRead Conversation</button>
+            <button id="setAllUnreadConversations">Set All UnRead Conversation</button>
+            <button id="setAllReadConversations">Set Read Conversation</button>
+        </div>
+        <div>
+            Subscribe to this user:
+            <input id="userIdentity" type="text" />
+            <button id="getUserInfo">Subscribe User</button>
+        </div>
+        <div>
+            Add user:
+            <input id="addUserIdentity" type="text" />
+            <button id="addUserInfo">Add User</button>
+        </div>
+    </body>
+</html>
